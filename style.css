@@ -1,0 +1,509 @@
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* header-section start*/
+.header-section {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header-section .logo {
+    padding: 5px 0;
+    line-height: 40px;
+}
+.header-section .logo img {
+    max-width: 50px;
+    display: inline-block;
+}
+.header-section .logo span {
+    font-weight: 600;
+    transition: 0.4s;
+    color: #000;
+}
+.header-section .logo a:hover {
+    text-decoration: none;
+}
+
+.header-section .menu {
+    margin-left: 20px;
+    text-align: right;
+}
+.header-section .menu ul {
+    margin: 0;
+}
+.header-section .menu ul li {
+    display: inline-block;
+    line-height: 50px;
+    position: relative;
+    margin-right: -6px;
+}
+.header-section .menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    padding: 0 15px;
+}
+.header-section .menu ul li a:hover {
+    color: #82622E;
+}
+
+
+/* header-section End*/
+
+/* banner-section start */
+.banner-section {
+    background: url(image/kobu-agency-IWLR561-Yb-MY-unsplash.jpg) rgba(51, 51, 51, 0.363);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5);
+    z-index: -1;
+}
+.banner-section .banner {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.banner-section .banner .banner-title {
+    padding: 157px 0;
+}
+.banner .banner-title p {
+    font-size: 23px;
+}
+.banner .banner-title h2 {
+    margin: 32px 0;
+    font-size: 54px;
+    font-weight: 600;
+}
+.banner .banner-title button {
+    padding: 15px 32px;
+    border-radius: 7px;
+    margin: 0 10px;
+    border: none;
+    color: #737373;
+    font-weight: 600;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.banner .banner-title button:hover {
+    background: #DA9D32;
+    color: #fff;
+}
+
+/* banner section css end */
+
+/* pricing-section css start */
+.pricing-section {
+    background: #F7F7F7;
+    padding-bottom: 30px;
+}
+
+.pricing-section .p-content {
+    padding: 35px 16px;
+    height: 240px;
+}
+
+.pricing-section .p-title h2 {
+    font-size: 55px;
+    font-weight: 600;
+}
+.pricing-section .p-title p {
+    font-size: 16px;
+    color: #404040;
+    font-weight: 400;
+}
+.pricing-section .pricing-rate {
+    width: 32%;
+    background: #fff;
+    box-shadow: 0px 0px 22px -2px #6279df67;
+    box-sizing: border-box;
+    margin-right: 2%;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+.pricing-section .pricing-rate:last-child {
+    margin-right: 0;
+}
+.pricing-section .pricing-rate h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.pricing-section .pricing-rate h3 {
+    font-weight: 700;
+    margin: 27px 0;
+    background: #F7F7F7;
+    padding: 5px 10px;
+    font-size: 45px;
+
+}
+.pricing-section .pricing-rate:hover  h3{
+    background: #DA9D32;
+    color: #fff;
+    transition: .4s;
+}
+.pricing-section .pricing-rate h3 span {
+    font-size: 16px;
+}
+.pricing-section .pricing-rate h5 {
+    font-size: 16px;
+}
+.pricing-section .pricing-rate p {
+    font-size: 16px;
+    font-weight: 300;
+}
+.pricing-section .pricing-rate ul {
+    padding: 35px 16px;
+}
+.pricing-section .pricing-rate ul li {
+    list-style: none;
+    line-height: 2.5em;
+    color: #000;
+    font-weight: 300;
+}
+.pricing-section .pricing-rate ul li i {
+    color: #DA9D32;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.pricing-section .pricing-rate .p-btn {
+    text-align: center;
+}
+.pricing-section .pricing-rate .p-btn button {
+    border: none;
+    box-shadow: 0px 3px 22px -2px #6279df67;
+    background: #fff;
+    padding: 13px 25px;
+    color: #76797e;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.anoter-p {
+    border-top: 1px solid #ddd;
+    margin-top: 1px;
+}
+/* hover part css */
+.pricing-section .pricing-rate:hover .p-content {
+    background: #DA9D32;
+    color: rgb(250, 245, 224);
+    transition: 0.3s;
+    border-radius: 5px 5px 0 0;
+}
+.pricing-section .pricing-rate:hover .p-btn button {
+    background: #DA9D32;
+    color: rgb(250, 245, 224);
+    transition: 0.3s;
+}
+
+
+/* pricing-section css end */
+
+/* team-section css start  */
+.team-section {
+    padding-bottom: 30px;
+}
+.team-section h2 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.team-section .team-title {
+    padding: 50px;
+}
+.team-section .team-person {
+    width: 23.5%;
+    margin-right: 2%;
+    box-shadow: 0px 1px 27px -10px #6279df67;
+    border: 8px double #E79230;
+}
+.team-section .team-person:last-child {
+    margin-right: 0;
+}
+
+.team-section .team-person img {
+    width: 100%;
+}
+.team-section .team-person .team-name {
+    padding: 24px 18px;
+    margin-bottom: -12px;
+}
+.team-section .team-person .team-name h4 {
+    font-size: 22px;
+}
+.team-section .team-person .team-name p {
+    color: #767676;
+}
+.team-person:hover {
+    box-shadow: 0px 3px 22px 1px #6279df31;
+    transition: 0.3s;
+}
+/* team-section css End  */
+/* newsletter-css start */
+.newsletter {
+    background: #F5F5F5;
+    padding: 100px 0;
+
+}
+.newsletter .news-title {
+    text-align: center;
+}
+.newsletter .news-title p {
+    color: #767676;
+    font-weight: 500;
+    font-size: 15px;
+}
+.newsletter .news-title h2 {
+    font-weight: 500;
+    font-size: 40px;
+    padding: 50px 0;
+}
+.newsletter form {
+    text-align: center;
+}
+.newsletter form input {
+    border: 2px solid #BFD048;
+    box-shadow: 0px 0px 34px -7px #6279df67;
+    padding: 10px 180px 10px 11px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 23px;
+}
+.newsletter form input:focus {
+    box-shadow: 0px 0px 21px 5px #6279df50;
+    border: 2px solid #859233;
+    /*! border: none; */
+}
+.newsletter form button {
+	border: none;
+	background: #DA9D32;
+	color: #fff;
+	padding: 11px 75px;
+	border-radius: 8px;
+	font-weight: 500;
+	margin-left: 6px;
+	border: 2px solid transparent;
+	transition: 0.3s;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.newsletter form button:hover {
+    background: #ffff;
+    box-shadow: 0px 0px 21px 5px #6279df5e;
+    color: #DA9D32;
+    border: 2px solid #DA9D32;
+}
+
+/* newsletter-css End */
+
+/* blog-section css start */
+.blog-section {
+    padding-bottom: 3px;
+}
+.blog-section .blog-title h2 {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+.blog-section .blog-image h3 {
+	font-weight: 700;
+	color: #555;
+	font-size: 18px;
+	padding: 7px 0;
+}
+
+.another-blog{
+    padding-top: 22px;
+}
+.blog-section .blog-image img{
+    float: left;
+    margin-right: 30px;
+    max-width: 440px;
+}
+.blog-section .blog-image h3{
+    font-weight: 700;
+    color: #555;
+    font-size: 18px;
+}
+.blog-section .blog-image p{
+    font-size: 14px;
+    line-height: 1.9em;
+    color: #767676;}
+/* blog-section css End */
+/* testimonial css start  */
+.testimonial-section {
+    background: #F5F5F5;
+    padding-bottom: 50px;
+}
+.testimonial-section .testimonial-title {
+    text-align: center;
+    padding: 40px 0;
+}
+.testimonial-section .testimonial-title p {
+    color: #767676;
+    font-size: 21px;
+}
+.testimonial-section .testimonial-title h2 {
+    font-size: 37px;
+    font-weight: 500;
+}
+.testimonial-section .testimonial-content {
+	width: 31%;
+	margin-right: 2.33%;
+	text-align: left;
+	padding-bottom: 30px;
+	border: 1px solid #ddd;
+}
+.testimonial-section .testimonial-content:last-child{
+    margin-right: 0;
+}
+.testimonial-section .testimonial-content p {
+	box-shadow: 0px 0px 13px 1px #6279df36;
+	padding: 37px 40px;
+	color: #767676;
+	line-height: 1.8em;
+	font-size: 16px;
+	background: #fff;
+	transition: .3s;
+	position: relative;
+}
+.testimonial-section .testimonial-content p::before {
+	content: "\f10d";
+	font-weight: 600;
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	left: 26px;
+	top: 27px;
+	font-size: 60px;
+	opacity: 0.12;
+}
+.testimonial-section .testimonial-content p::after {
+	content: "";
+	position: absolute;
+	left: 155px;
+	bottom: -20px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 20px;
+	border-color: #ffffff transparent transparent transparent;
+}
+.testimonial-section .testimonial-content p:hover{
+    box-shadow: 0px 0px 13px 3px #6279df2a;
+}
+.testimonial-content .testimonial-user img {
+	max-width: 70px;
+	border: 7px solid #A88D21;
+	float: left;
+	margin-left: 70px;
+	margin-right: 25px;
+}
+.testimonial-content .testimonial-user .t-user h4 {
+	font-size: 18px;
+	text-align: left;
+	margin-top: 35px;
+	position: relative;
+	top: 5px;
+	left: 0px;
+}
+.testimonial-content .testimonial-user .t-user span {
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	color: #767676;
+}
+/* testimonial css End  */
+/* contact section css start */
+.contact-section{
+    padding: 40px;
+}
+.contact-section .contact{
+    width: 70% ;
+    margin: auto;
+    padding: 0 50px;
+
+}
+.contact-section .contact h4{
+    margin-top: 34px;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.contact-section .contact p{
+    font-size: 18px;
+    color: #767676;
+    line-height: 1.8em;
+    margin-bottom: 35px;}
+
+.contact-section .contact form input {
+	border: 2px solid #A88D21;
+	box-shadow: 0px 0px 16px 1px #6279df1f;
+	padding: 25px 0px 25px 13px;
+    transition: .3s;
+    border-radius: 10px;
+    
+}
+.wid {
+	width: 48%;
+}
+textarea{
+    width: 100%;
+    height: 180px;
+    border: 2px solid #A88D21;
+    box-shadow: 0px 0px 16px 1px #6279df1f;
+    transition: .3s;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+textarea:focus{
+    box-shadow: 0px 0px 16px 5px #6279df5e;
+    border: 2px solid #7a7c08;
+}
+.contact-section .contact form input:focus{
+    box-shadow: 0px 0px 16px 5px #6279df5e;
+    border: 2px solid #7a7c08;
+}
+.contact-section .contact form button {
+	border: 2px solid transparent;
+	background: #A88D21;
+    padding: 15px 80px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 600;
+	margin-top: 20px;
+    transition: .3s;
+}
+.contact-section .contact form button:hover {
+	background: #fff;
+	color: #A88D21;
+	border: 2px solid #A88D21;
+	box-shadow: 0px 0px 16px 5px #6279df47;
+}
+
+.footer{
+    text-align: center; 
+    display:block;   
+}
+.footer h4 {
+	font-size: 15px;
+	padding: 16px 0;
+    font-weight: 500;
+}
+/* contact section css End */
